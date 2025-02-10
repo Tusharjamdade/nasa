@@ -28,7 +28,7 @@ const Home: React.FC = () => {
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-900 text-white p-6">
-      <h1 className="text-4xl font-bold mb-6 text-center">Explore NASA Data  {}</h1>
+      <h1 className="text-4xl font-bold mb-6 text-center">Explore NASA Data  { }</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6">
         {routes.map((route, index) => (
           <Link to={route.path} key={index} className="group">
@@ -38,8 +38,8 @@ const Home: React.FC = () => {
                 alt={route.title}
                 className="w-full h-48 object-cover opacity-90 group-hover:opacity-100 transition-opacity"
               />
-              <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-                <p className="text-lg font-semibold">{route.title}</p>
+              <div className="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 group-hover:bg-black/60 transition-all duration-300">
+                <p className="text-lg font-semibold text-white">{route.title}</p>
               </div>
             </div>
           </Link>
