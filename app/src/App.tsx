@@ -9,6 +9,7 @@ import MarsRoverPhotos from "./pages/RoverDailyImages";
 import EarthImages from "./pages/EarthImages";
 import GlobalWarmingVisualizer from "./pages/GlobalWarming";
 import Home from "./pages/Home";
+import NEODataFetcher from "./pages/NearEarthObjects";
 
 const App: React.FC = () => {
   return (
@@ -20,6 +21,7 @@ const App: React.FC = () => {
         <Route path="/rover" element={<MarsRoverPhotos />} />
         <Route path="/earth" element={<EarthImages />} />
         <Route path="/globalwarming" element={<GlobalWarmingVisualizer />} />
+        <Route path="/neo" element={<NEODataFetcher />} />
         <Route path="*" element={<h1>404 - Page Not Found</h1>} />
       </Routes>
     </Router>
